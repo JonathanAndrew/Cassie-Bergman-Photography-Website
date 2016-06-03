@@ -1,8 +1,11 @@
-<ul class="gallery">
-	<li><img class="gallery-img" src="https://c8.staticflickr.com/8/7522/27245000111_5dbe6f1c5b_b.jpg" alt="Cassie Bergman Photography, Wedding Photo"/></li>
-	<li><img class="gallery-img" src="https://c8.staticflickr.com/8/7677/27244999271_1c6d1864e4_b.jpg" alt="Cassie Bergman Photography, Batey Wedding 2016"/></li>
-	<li><img class="gallery-img" src="https://c5.staticflickr.com/8/7664/27282008396_4327a4d07b_b.jpg" alt="Cassie Bergman Photography, Batey Wedding 2016"/></li>
-	<li><img class="gallery-img" src="https://c8.staticflickr.com/8/7312/26708888423_4259fc2aef_b.jpg" alt="Cassie Bergman Photography Nolly Wedding CPB"/></li>
-	<li><img class="gallery-img" src="https://c2.staticflickr.com/8/7111/26708886633_4a2ede3180_b.jpg" alt="Cassie Bergman Photography, Photo of Wedding"/></li>
-	<li><img class="gallery-img" src="https://c4.staticflickr.com/8/7753/27245001811_d348cc89bd_b.jpg" alt="Cassie Bergman Photography, Wedding Photo"/></li>
-</ul>
+<div class="container">
+	<h1>Wedding Images</h1>
+	<a class="btn btn-primary" href="/">BACK</a>
+	<div class="showImages">
+		<ul class="gallery">
+			<% weddingImages.forEach(function(image, idx){ %>
+			<li><a href="wedding-images/<%= idx %>"><img class="gallery-img" src="<%= image.src %>"/></a></li>	
+			<% }); %>
+		</ul>
+	</div>
+</div>
