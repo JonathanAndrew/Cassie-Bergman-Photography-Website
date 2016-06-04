@@ -33,14 +33,18 @@ footer{
 }
 
 .navbar-default{
+	border-right: none !important;
+	border-left: none !important;
 	z-index: 999;
 	margin-bottom: 0 !important;
 }
 
 .navbar-brand{
 	font-size: 2.5em !important;
-    margin-left: 50px !important;
+	text-shadow: 2px 1px rgb(128,128,128);
+    margin-left: 25px !important;
     letter-spacing: 2px !important;
+    color: #fff !important;
     width: 550px;
     font-weight: 900;
     font-family: 'Overlock', cursive;
@@ -48,13 +52,19 @@ footer{
 
 .featured{
 	font-size: 1.8em;
+	color: #fff;
 	margin-left: 130px !important;
 	font-family: 'Playball', cursive;
 }
-
+.carousel-control.left{
+	    background-image: linear-gradient(to right,rgba(0,0,0,.9) 0,rgba(0,0,0,.01) 100%)!important;
+}
+.carousel-control.right{
+	    background-image: linear-gradient(to right,rgba(0,0,0,.01) 0,rgba(0,0,0,.9) 100%)!important;
+}
 .item{
 	width: auto;
-	height: 700px;
+	height: 800px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -63,13 +73,6 @@ footer{
 }
 .item img{
 	margin: 100px auto;
-}
-
-.cat{
-	width: 800px;
-    float: right;
-    z-index: 5 !important;
-    margin-top: -30px !important;
 }
 .box{
 	background-color: rgba(0,0,0,.5);
@@ -111,14 +114,31 @@ footer{
 	float: left;
 	margin-left: 50px;
 }
-.nav.nav-tabs.navbar-right li a:hover{
-	border-top: 5px solid blue;
+.nav{
+	margin-top: 50px!important;
 }
-.nav li a:hover{
-	border-bottom: 5px solid blue;
+.nav-tabs li a{
+	color: #d3d3d3 !important;
+	font-size: 1.2em;
+}
+.nav-tabs li a:hover{
+	color: #fff !important;
+	font-weight: bold !important;
+}
+.nav-tabs{
+	border-bottom: none !important;
+}
+.nav.nav-tabs.navbar-right li a:hover{
+	background-color: rgba(255,255,255,.1) !important;
+	color: #fff;
+	border-top: 5px solid #f5f5f5;
 }
 .topnav{
 	margin-right: 20% !important;
+}
+.back-btn{
+	float: left;
+	margin-top: 50px;
 }
 .gallery{
 	text-align: center;
@@ -126,7 +146,7 @@ footer{
 	width: 1000px;
 	padding-top: 10px;
 	/*padding-top: 200px;*/
-	margin: 0 auto;
+	margin: 26px auto;
 }
 .gallery li{
 	display: inline-block;
@@ -135,6 +155,10 @@ footer{
 	width: 300px;
 	margin-top: 5px;
 	height: auto;
+}
+.galler-img:hover{
+	background-color: #d3d3d3 !important;
+	z-index: 999; 
 }
 .footer-list{
 	list-style-type: none;
@@ -174,7 +198,7 @@ footer{
 .image img{
 	max-height: 700px;
 }
-.wedding-btn,.engagment-btn{
+.wedding-btn,.engagement-btn{
 	position: absolute;
 	top: 100px;
     right: 20%;
