@@ -93,4 +93,41 @@ app.get('/engagement-images/:idx', function(req,res){
 	};
 });
 
+var kidsImages = [
+{title: 'kids1', src: 'https://c1.staticflickr.com/8/7031/27353927336_1146f6bfcb_b.jpg'},
+{title: 'kids2', src: 'https://c1.staticflickr.com/8/7299/27353930416_d9f4c2958d_b.jpg'},
+{title: 'kids3', src: 'https://c5.staticflickr.com/8/7319/27353927956_7f941e5084_b.jpg'},
+{title: 'kids4', src: 'https://c2.staticflickr.com/8/7789/27387391385_38f0f8a907_b.jpg'},
+{title: 'kids5', src: 'https://c4.staticflickr.com/8/7064/27387390315_d15e2b3c09_b.jpg'},
+{title: 'kids6', src: 'https://c5.staticflickr.com/8/7384/27353929676_d5f92ebe6f_b.jpg'},
+{title: 'kids7', src: 'https://c5.staticflickr.com/8/7305/27353925836_9384387c5f_b.jpg'},
+{title: 'kids7', src: ''},
+{title: 'kids8', src: 'https://c2.staticflickr.com/8/7789/27387391385_38f0f8a907_b.jpg'},
+{title: 'kids9', src: 'https://c2.staticflickr.com/8/7163/27387390785_a5903c1a85_b.jpg'},
+{title: 'kids10', src: 'https://c4.staticflickr.com/8/7308/27387389875_92b5c06ab4_b.jpg'},
+{title: 'kids11', src: 'https://c5.staticflickr.com/8/7546/27353926516_debd365a01_b.jpg'},
+{title: 'kids12', src: 'https://c5.staticflickr.com/8/7738/27353928916_f3e97ab893_b.jpg'},
+{title: 'kids13', src: 'https://c3.staticflickr.com/8/7305/27353927306_57d023b545_b.jpg'},
+{title: 'kids14', src: 'https://c3.staticflickr.com/8/7218/27353925546_03bb9c0911_b.jpg'}
+];
+
+app.get('/kids', function(req,res){
+	res.render('kids.ejs');
+})
+
+app.get('/kids-gallery',function(req,res){
+	res.render('kidsGallery.ejs',{kidsImages: kidsImages});
+})
+
+app.get('/kids-images/:idx', function(req,res){
+	var kidsIdx = parseInt(req.params.idx);
+	if(kidsIdx >= 0 && kidsIdx < kidsImages.length){
+		res.render('kidsShow.ejs',
+			{kidsImages: kidsImages[kidsIdx]
+		});
+	} else {
+		res.send('error');
+	};
+});
+
 app.listen(3000);

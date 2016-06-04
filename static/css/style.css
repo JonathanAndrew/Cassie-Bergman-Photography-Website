@@ -198,7 +198,7 @@ footer{
 .image img{
 	max-height: 700px;
 }
-.wedding-btn,.engagement-btn{
+.wedding-btn,.engagement-btn,.kids-btn{
 	position: absolute;
 	top: 100px;
     right: 20%;
