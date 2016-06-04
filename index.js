@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
 var ejsLayouts = require('express-ejs-layouts');
-// var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 
 app.use(ejsLayouts);
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + "/static"));
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/',function(req,res){
 	res.render('index.ejs');
@@ -68,5 +68,29 @@ app.get('/wedding-images/:idx',function(req,res){
 app.get('/engagement', function(rew,res){
 	res.render('engagement.ejs');
 })
+
+app.get('/engagement-gallery', function(req,res){
+	res.render('engagementGallery.ejs', {engagementImages: engagementImages});
+})
+
+var engagementImages = [
+	{title: 'engagement-photo1', src: 'https://c3.staticflickr.com/8/7441/27111226490_d51135e18b_b.jpg'},
+	{title: 'engagement-photo2', src: 'https://c3.staticflickr.com/8/7741/27111225050_da7de3574a_b.jpg'},
+	{title: 'engagement-photo3', src: 'https://c2.staticflickr.com/8/7316/26780178713_6f9b87887e_b.jpg'},
+	{title: 'engagement-photo4', src: 'https://c2.staticflickr.com/8/7616/26780180673_584b6ea3ef_b.jpg'},
+	{title: 'engagement-photo5', src: 'https://c3.staticflickr.com/8/7207/27111226010_d42c7f7f39_b.jpg'},
+	{title: 'engagement-photo5', src: 'https://c6.staticflickr.com/8/7294/26780180293_fcf4bb17be_b.jpg'}
+];
+
+app.get('/engagement-images/:idx', function(req,res){
+	var engagementIdx = parseInt(req.params.idx);
+	if(engagementIdx >= 0 && engagementIdx < engagementImages.length){
+		res.render('engagementShow.ejs', {
+			engagementImages: engagementImages[engagementIdx]
+		});
+	} else {
+		res.send('error');
+	};
+});
 
 app.listen(3000);
