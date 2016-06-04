@@ -1,5 +1,8 @@
-<div class="Container image">
-	<h3> <%= weddingImages.title %> </h3>
-	<img src="<%= weddingImages.src %>"/>
-	<a class="btn btn-primary" href="/wedding-gallery">Back</a>
+<div class="show-image">
+	<a class="show-back-btn btn btn-primary btn-lg" href="/wedding-gallery">Back</a>
+	<div class="image">
+		<a class="btn print-btn btn-primary btn-lg" href="mailto:cassie@example.com?subject=<%= weddingImages.subject %>&body=<%= weddingImages.content %>">Print Canvas</a>
+		<h3 class="image-title"> <%= weddingImages.title %> </h3>
+		<img alt="Cassie Bergman Photography" src="<%= weddingImages.src %>"/>
+	</div>
 </div>
