@@ -45,8 +45,7 @@ var weddingImages = [
 	{title: 'Wedding22', src:'https://c8.staticflickr.com/8/7043/27374184631_c71fecfa56_b.jpg'},
 	{title: 'Wedding23', src:'https://c2.staticflickr.com/8/7673/26838424793_76d5c88e89_b.jpg'},
 	{title: 'Wedding24', src:'https://c2.staticflickr.com/8/7026/26838426073_8c17895e5f_b.jpg'},
-	{title: 'Wedding25', src:'https://c2.staticflickr.com/8/7026/26838426073_8c17895e5f_b.jpg'},
-	{title: 'Wedding26', src:'https://c4.staticflickr.com/8/7296/26838430483_906984a394_b.jpg'},
+	{title: 'Wedding25', src:'https://c4.staticflickr.com/8/7296/26838430483_906984a394_b.jpg'}
 ];
 
 app.get('/wedding-gallery', function(req,res){
@@ -124,6 +123,53 @@ app.get('/kids-images/:idx', function(req,res){
 	if(kidsIdx >= 0 && kidsIdx < kidsImages.length){
 		res.render('kidsShow.ejs',
 			{kidsImages: kidsImages[kidsIdx]
+		});
+	} else {
+		res.send('error');
+	};
+});
+
+var familyImages = [
+	{title: 'Family1',src:'https://c7.staticflickr.com/8/7283/27353917966_b5e96ddcae_b.jpg'},
+	{title: 'Family2',src:'https://c3.staticflickr.com/8/7617/27289366882_32e4277320_b.jpg'}
+]
+
+app.get('/family', function(req,res){
+	res.render('family.ejs');
+})
+
+app.get('/family-gallery', function(req,res){
+	res.render('familyGallery.ejs',{familyImages: familyImages});
+})
+
+app.get('/family-images/:idx',function(req,res){
+	var familyIdx = parseInt(req.params.idx);
+	if(familyIdx >= 0 && familyIdx < familyImages.length){
+		res.render('familyShow.ejs',
+			{familyImages: familyImages[familyIdx]
+		});
+	} else {
+		res.send('error');
+	};
+});
+
+var maternityImages = [
+	{title: 'Maternity1',src:'https://c3.staticflickr.com/8/7212/27353933746_f964fd7ec6_b.jpg'}
+]
+
+app.get('/maternity',function(req,res){
+	res.render('maternity.ejs');
+})
+
+app.get('/maternity-gallery', function(req,res){
+	res.render('maternityGallery.ejs',{maternityImages: maternityImages});
+})
+
+app.get('/maternity-images/:idx', function(req,res){
+	var maternityIdx = parseInt(req.params.idx);
+	if(maternityIdx >= 0 && maternityIdx < maternityImages.length){
+		res.render('maternityShow.ejs',
+			{maternityImages:maternityImages[maternityIdx]
 		});
 	} else {
 		res.send('error');
