@@ -34,7 +34,7 @@ footer{
 }
 .gallery-btn{
 	position: absolute;
-	bottom: 35px;
+	bottom: 110px;
 	left: 15%;
 	right: 15%;
 	padding-bottom: 0 !important;
@@ -95,8 +95,8 @@ footer{
     font-family: 'Playball', cursive;
 }
 .featured-small-screen{
-	position: relative;
-	bottom: 15px;
+	position: fixed;
+	bottom: 33px;
 }
 .featured{
 	display: none;
@@ -205,6 +205,7 @@ footer{
 	margin: 0 auto;
 }
 .gallery li{
+	padding-left: 0;
 	display: inline-block;
 }
 .gallery-img{
@@ -387,13 +388,6 @@ footer{
     font-weight: 900;
     font-family: 'Overlock', cursive;
 }
-
-.featured{
-	font-size: 1.8em;
-	color: #fff;
-	margin-left: 130px !important;
-	font-family: 'Playball', cursive;
-}
 .item{
 	width: auto;
 	height: 800px;
@@ -506,10 +500,7 @@ footer{
 }
 
 .featured{
-	font-size: 1.8em;
-	color: #fff;
-	margin-left: 130px !important;
-	font-family: 'Playball', cursive;
+	display: block;
 }
 .item{
 	width: auto;
@@ -521,7 +512,10 @@ footer{
 	max-height: 800px !important;
 }
 .front-page-img{
-	display: none !important;
+	display: block !important;
+}
+.small-screen-img{
+	display: none !important
 }
 .item img{
 	margin: 100px auto;
@@ -670,10 +664,7 @@ footer{
 }
 
 .featured{
-	font-size: 1.8em;
-	color: #fff;
-	margin-left: 130px !important;
-	font-family: 'Playball', cursive;
+	display: block;
 }
 .item{
 	width: auto;
@@ -689,6 +680,10 @@ footer{
 }
 .front-page-img{
 	width: 100%;
+	display: block !important;
+}
+.small-screen-img{
+	display: none !important
 }
 .item img{
 	margin: 100px auto;
@@ -857,10 +852,7 @@ footer{
 }
 
 .featured{
-	font-size: 1.8em;
-	color: #fff;
-	margin-left: 130px !important;
-	font-family: 'Playball', cursive;
+	display: block;
 }
 .item{
 	width: auto;
@@ -878,8 +870,11 @@ footer{
 }
 .front-page-img{
 	width: 100%;
+	display: block !important;
 }
-
+.small-screen-img{
+	display: none !important
+}
 .box{
 	background-color: rgba(0,0,0,.5);
     padding: 15px 15px;
@@ -1026,7 +1021,9 @@ footer{
 .title{
 	list-style-type: none;
 }
-
+.navbar-right{
+	margin-right: 0 !important;
+}
 .navbar-default{
 	border-right: none !important;
 	border-left: none !important;
@@ -1035,21 +1032,19 @@ footer{
 }
 
 .navbar-brand{
-	font-size: 2.5em !important;
-	text-shadow: 2px 1px rgb(128,128,128);
+	font-size: 1.2em !important;
     margin-left: 25px !important;
-    letter-spacing: 2px !important;
-    color: #fff !important;
-    width: 550px;
-    font-weight: 900;
-    font-family: 'Overlock', cursive;
+    width: 630px !important;
 }
 
 .featured{
-	font-size: 1.8em;
-	color: #fff;
-	margin-left: 130px !important;
-	font-family: 'Playball', cursive;
+	display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,.0001);
+    margin: 22px;
+}
+.featured-small-screen{
+	display: none;
 }
 .item{
 	width: auto;
@@ -1058,7 +1053,7 @@ footer{
 	margin: 0 auto;
 }
 .item img{
-	width: auto !important;
+	width: 100% !important;
 	margin: 100px auto;
 	max-height: 800px !important;
 }
@@ -1067,6 +1062,10 @@ footer{
 }
 .front-page-img{
 	width: 100%;
+	display: block !important;
+}
+.small-screen-img{
+	display: none !important
 }
 .box{
 	background-color: rgba(0,0,0,.5);
