@@ -1040,8 +1040,9 @@ footer{
 .featured{
 	display: block;
     position: absolute;
+    top: 50px;
+    left: 193px;
     background-color: rgba(0,0,0,.0001);
-    margin: 22px;
 }
 .featured-small-screen{
 	display: none;
