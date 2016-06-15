@@ -28,7 +28,6 @@ footer{
 }
 .navbar{
 	font-family: 'Raleway', sans-serif;
-	/*font-weight: 100;*/
 	width: 100%;
 	position: fixed !important;
 	top: 0;
@@ -56,7 +55,27 @@ footer{
 .title{
 	list-style-type: none;
 }
-
+.nav{
+	margin-top: 50px!important;
+	display: inline;
+}
+.navbar-collapse.in {
+    overflow-y: visible !important;
+}
+.nav-tabs{
+	border-bottom: none !important;
+}
+.nav-tabs li a:hover{
+	color: #000 !important;
+	font-weight: bold;
+	font-size: 1.2em;
+	border-top: 5px solid #f5f5f5;
+}
+.nav-tabs li a{
+	background-color: rgba(255,255,255,.8);
+	color: #000 !important;
+	font-size: 1.2em;
+}
 .navbar-default{
 	border-right: none !important;
 	border-left: none !important;
@@ -66,6 +85,7 @@ footer{
 .navbar-collapse {
     padding-right: 0 !important;
     padding-left: 0 !important;
+    height: 50px !important;
 } 
 .navbar-brand{
 	font-family: 'Raleway', sans-serif;
@@ -136,6 +156,18 @@ footer{
 .front-page-img{
 	display: none !important;
 }
+.glyphicon-controller{
+	font-size: 40px !important;
+}
+.glyphicon-email{
+	top: 10px !important;
+	left: 10px;
+	color: #fff;
+	font-size: 30px !important;
+}
+.glyphicon:hover,.social-media-icon:hover{
+	color: #00FFFF;
+}
 .item img{
 	width: auto;
 	min-height: 400px !important;
@@ -146,13 +178,13 @@ footer{
 .box{
 	width: 98%;
 	margin-top: 0;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.5) !important;
     padding: 15px 15px;
 }
 .hello{
 	font-family: 'Raleway', sans-serif;
 /*	font-weight: 100;*/
-	width: 98%;
+	width: 100%;
 	margin: 0 auto;
 	font-size: 1.2em;
 	color: #fff;
@@ -166,17 +198,19 @@ footer{
 	margin: 0 auto;
 }
 .cassie,.cassie2,.cassie3,.cassie4{
-    width: 98%;
+    width: 100% !important;
+    height: auto;
     margin-bottom: 0;
 }
 .cassie{
-	margin: 55px auto;
+	margin: 50px auto !important;
+	margin-bottom: 0 !important;
 }
 
 .bio,.bio2,.bio3{
 	font-family: 'Raleway', sans-serif;
 /*	font-weight: 100;*/
-	width: 98%;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 0;
 	text-align: center;
@@ -184,20 +218,6 @@ footer{
 	color: #fff;
 }
 
-.nav-tabs li a{
-	color: #d3d3d3 !important;
-	font-size: 1.2em;
-}
-.nav-tabs li a:hover{
-	color: #fff !important;
-}
-.nav-tabs{
-	border-bottom: none !important;
-}
-.nav.nav-tabs.navbar-right li a:hover{
-	background-color: rgba(255,255,255,.1) !important;
-	color: #fff;
-}
 .topnav{
 	margin-right: 20% !important;
 }
@@ -224,7 +244,7 @@ footer{
 	height: auto;
 }
 .gallery-title{
-	margin-top: 55px;
+	margin-top: 100px;
     font-size: 1.5em;
     text-align: center;
     text-decoration: underline;
@@ -237,6 +257,8 @@ footer{
 	z-index: 999; 
 }
 .footer-list{
+	position: absolute !important;
+	top: 0 !important;
 	list-style-type: none;
 	padding-left: 0;
 	text-align: center;
@@ -275,12 +297,18 @@ footer{
 	width: 65%;
 }
 .social-media{
-	padding: 5px 5px;
-	float: right;
-	margin-right: 15px;
+	list-style-type: none;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	margin-right: 20px;
 }
-.facebook{
-	height: 50px;
+.social-media li{
+	display: inline;
+}
+.social-media-icon{
+	margin-left: 5px;
+	height: 30px;
 }
 
 @media screen and (min-width:320px) and (max-width:350px) { 
@@ -298,13 +326,6 @@ footer{
 
 .navbar-brand{
 	font-size: .44em !important;
-	text-shadow: 2px 1px rgb(128,128,128);
-    margin-left: 1% !important;
-    letter-spacing: 2px !important;
-    color: #fff !important;
-    width: 330px;
-    font-weight: 900;
-    font-family: 'Overlock', cursive;
 }
 .carousel-control{
 	display: none;
@@ -318,10 +339,10 @@ footer{
 .front-page-img{
 	display: none !important;
 }
-.cassie{
-	margin: 55px auto;
+/*.cassie{
+	margin: 55px auto !important;
 	margin-bottom: 0;
-}
+}*/
 .topnav{
 	margin-right: 20% !important;
 }
@@ -357,13 +378,16 @@ footer{
 	text-align: center;
 }
 }
-@media screen and (min-width:351px) and (max-width:400px) { 
+@media screen and (min-width:351px){ 
 .navbar-brand{
-	font-size: .5em !important;
+	font-size: .6em !important;
 	margin-left: 2%;
 }
+.featured{
+	display: none;
 }
-@media screen and (min-width:401px) and (max-width:480px) { 
+}
+@media screen and (min-width:401px){ 
 .item img{
 	width: auto;
 	min-height: 400px !important;
@@ -371,12 +395,15 @@ footer{
 	overflow: hidden;
 	margin: 55px auto;
 }
+.featured{
+	display: none;
+}
 .navbar-brand{
-	font-size: .61em !important;
+	font-size: .6em !important;
 	margin-left: 1%;
 }
 }
-@media screen and (min-width:481px)and(max-width: 640px) {
+@media screen and (min-width:481px){
  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
 .gallery-btn{
@@ -388,22 +415,21 @@ footer{
 	list-style-type: none;
 }
 
-.navbar-default{
-	border-right: none !important;
-	border-left: none !important;
-	z-index: 999;
-	margin-bottom: 0 !important;
-}
-
 .navbar-brand{
-	font-size: 2.5em !important;
-	text-shadow: 2px 1px rgb(128,128,128);
+	font-size: .75em !important;
     margin-left: 25px !important;
-    letter-spacing: 2px !important;
-    color: #fff !important;
-    width: 550px;
-    font-weight: 900;
-    font-family: 'Overlock', cursive;
+    width: 630px !important;
+}
+.navbar-inverse{
+	height: 85px;
+}
+.featured {
+	font-size: 1.5em;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background-color: rgba(0,0,0,.0001);
 }
 .item{
 	width: auto;
@@ -419,24 +445,6 @@ footer{
 }
 .item img{
 	margin: 100px auto;
-}
-.box{
-	width: 98%;
-	background-color: rgba(0,0,0,.5);
-    padding: 15px 15px;
-}
-.hello{
-	color: #fff;
-	text-align: center;
-    width: 500px;
-}
-.cassie,.cassie2,.cassie3,.cassie4{
-	float: left;
-    width: 100%;
-    margin: -100px auto;
-}
-.cassie4{
-	margin-top: -650px;
 }
 .topnav{
 	margin-right: 20% !important;
@@ -483,12 +491,22 @@ footer{
 	margin-top: 100px;
 	text-align: center;
 }
+.social-media{
+	margin-right: 25px !important;
 }
-@media screen and (min-width:641px)and(max-width:960px) {
+.glyphicon-email{
+	font-size: 35px !important;
+	top: 15px !important;
+}
+.social-media-icon{
+	height: 35px !important;
+}
+}
+@media screen and (min-width:641px) {
  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 .carousel-control{
 	display: block;
-	width: 5% !important;
+	width: 10% !important;
 }
 .gallery-btn{
 	padding-bottom: 0 !important;
@@ -506,18 +524,19 @@ footer{
 }
 
 .navbar-brand{
-	font-size: 2.5em !important;
-	text-shadow: 2px 1px rgb(128,128,128);
+	font-size: 1em !important;
     margin-left: 25px !important;
-    letter-spacing: 2px !important;
-    color: #fff !important;
-    width: 550px;
-    font-weight: 900;
-    font-family: 'Overlock', cursive;
+    width: 630px !important;
 }
-
-.featured{
-	display: block;
+.navbar-inverse{
+	height: 85px;
+}
+.featured {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background-color: rgba(0,0,0,.0001);
 }
 .item{
 	width: auto;
@@ -542,40 +561,36 @@ footer{
     padding: 15px 15px;
     border-radius: 15px;
 }
-.hello{
-	position: absolute;
-	font-size: 1.8em;
-	top: 150px;
-	left: 75px;
-	color: #fff;
-	text-align: center;
-    width: 500px;
+.about-script {
+    position: absolute;
+    top: 110px;
+    left: 15px;
+    width: 50%;
+}
+.hello,.bio,.bio2,.bio3{
+	font-size: 1.2em;
 }
 .me,.about-me{
 	text-align: center;
-	height: 600px;
-	overflow: hidden;
+	height: 400px !important;
 }
-.cassie,.cassie2,.cassie3,.cassie4{
-	float: left;
-    width: 100%;
-    margin: -100px auto;
-}
-.cassie4{
-	margin-top: -650px;
-}
-.bio,.bio2,.bio3{
-	float: right;
-	margin: -500px 50px 0 0;
-	width: 500px;
-	text-align: center;
-	font-size: 1.8em;
-	color: #fff;
+.bio{
+	position: relative;
+	top: -400px;
+	left: 100px;
+	width: 50%;
 }
 .bio2{
-	margin-top: -700px;
-	float: left;
-	margin-left: 50px;
+	position: relative;
+	width: 50%;
+	top: -400px;
+	right:100px;
+}
+.bio3{
+	position: relative;
+	width: 75%;
+	top: -400px;
+	left: 50px;
 }
 .topnav{
 	margin-right: 20% !important;
@@ -644,12 +659,31 @@ footer{
 .image img{
 	max-height: 700px;
 }
+.glyphicon-email{
+	font-size: 40px !important;
+	top: 15px !important;
 }
-@media screen and (min-width:961px)and(max-width:1024px) {
+.social-media-icon{
+	height: 40px !important;
+}
+}
+@media screen and (min-width:700px){
+.me,.about-me{
+	text-align: center;
+	height: 460px !important;
+}
+}
+@media screen and (min-width:800px){
+.me,.about-me{
+	text-align: center;
+	height: 500px !important;
+}
+}
+@media screen and (min-width:961px) {
  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 .carousel-control{
 	display: block;
-	width: 5% !important;
+	width: 10% !important;
 }
 .gallery-btn{
 	padding-bottom: 0 !important;
@@ -670,18 +704,19 @@ footer{
 }
 
 .navbar-brand{
-	font-size: 2.5em !important;
-	text-shadow: 2px 1px rgb(128,128,128);
+	font-size: 1em !important;
     margin-left: 25px !important;
-    letter-spacing: 2px !important;
-    color: #fff !important;
-    width: 550px;
-    font-weight: 900;
-    font-family: 'Overlock', cursive;
+    width: 630px !important;
 }
-
-.featured{
-	display: block;
+.navbar-tabs{
+	margin-right: 30px;
+}
+.featured {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 193px;
+    background-color: rgba(0,0,0,.0001);
 }
 .item{
 	width: auto;
@@ -710,59 +745,26 @@ footer{
     padding: 15px 15px;
     border-radius: 15px;
 }
-.hello{
-	position: absolute;
-	font-size: 1.8em;
-	top: 150px;
-	left: 75px;
-	color: #fff;
-	text-align: center;
-    width: 500px;
-}
 .me,.about-me{
 	text-align: center;
-	height: 600px;
-	overflow: hidden;
+	height: 625px !important;
 }
-.cassie,.cassie2,.cassie3,.cassie4{
-	float: left;
-    width: 100%;
-    margin: -100px auto;
+.hello,.bio,.bio2,.bio3{
+	font-size: 1.5em
 }
-.cassie4{
-	margin-top: -650px;
-}
-.bio,.bio2,.bio3{
-	float: right;
-	margin: -500px 50px 0 0;
-	width: 500px;
-	text-align: center;
-	font-size: 1.8em;
-	color: #fff;
+.bio,.bio3{
+	top: -400px;
+	width: 50%;
+	left: 200px;
 }
 .bio2{
-	margin-top: -700px;
-	float: left;
-	margin-left: 50px;
+	top: -400px;
+	width: 50%;
+	right: 200px;
 }
+
 .nav{
 	margin-top: 50px!important;
-}
-.nav-tabs li a{
-	color: #d3d3d3 !important;
-	font-size: 1.2em;
-}
-.nav-tabs li a:hover{
-	color: #fff !important;
-	font-weight: bold !important;
-}
-.nav-tabs{
-	border-bottom: none !important;
-}
-.nav.nav-tabs.navbar-right li a:hover{
-	background-color: rgba(255,255,255,.1) !important;
-	color: #fff;
-	border-top: 5px solid #f5f5f5;
 }
 .topnav{
 	margin-right: 20% !important;
@@ -831,13 +833,19 @@ footer{
 .image img{
 	max-height: 700px;
 }
+.glyphicon-email{
+	font-size: 40px !important;
 }
-@media screen and (min-width:1025px)and(max-width:1280px) {
+.social-media-icon{
+	height: 40px !important;
+}
+}
+@media screen and (min-width:1025px){
  /* big landscape tablets, laptops, and desktops */ 
 
 .carousel-control{
 	display: block;
-	width: 5% !important;
+	width: 10% !important;
 }
 .gallery-btn{
 	padding-bottom: 0 !important;
@@ -858,18 +866,17 @@ footer{
 }
 
 .navbar-brand{
-	font-size: 2.5em !important;
-	text-shadow: 2px 1px rgb(128,128,128);
+	font-size: 1.2em !important;
     margin-left: 25px !important;
-    letter-spacing: 2px !important;
-    color: #fff !important;
-    width: 550px;
-    font-weight: 900;
-    font-family: 'Overlock', cursive;
+    width: 630px !important;
 }
 
-.featured{
-	display: block;
+.featured {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 193px;
+    background-color: rgba(0,0,0,.0001);
 }
 .item{
 	width: auto;
@@ -897,59 +904,23 @@ footer{
     padding: 15px 15px;
     border-radius: 15px;
 }
-.hello{
-	position: absolute;
-	font-size: 1.8em;
-	top: 150px;
-	left: 75px;
-	color: #fff;
-	text-align: center;
-    width: 500px;
+.hello,.bio,.bio2,.bio3{
+	font-size: 1.6em;
 }
-.me,.about-me{
-	text-align: center;
-	height: 600px;
-	overflow: hidden;
-}
-.cassie,.cassie2,.cassie3,.cassie4{
-	float: left;
-    width: 100%;
-    margin: -100px auto;
-}
-.cassie4{
-	margin-top: -650px;
-}
-.bio,.bio2,.bio3{
-	float: right;
-	margin: -500px 50px 0 0;
-	width: 500px;
-	text-align: center;
-	font-size: 1.8em;
-	color: #fff;
+.bio,.bio3{
+	top: -650px;
+	left: 200px;
 }
 .bio2{
-	margin-top: -700px;
-	float: left;
-	margin-left: 50px;
+	top: -650px;
+	right: 200px;
 }
+.me,.about-me{
+	height: 625px;
+}
+
 .nav{
 	margin-top: 50px!important;
-}
-.nav-tabs li a{
-	color: #d3d3d3 !important;
-	font-size: 1.2em;
-}
-.nav-tabs li a:hover{
-	color: #fff !important;
-	font-weight: bold !important;
-}
-.nav-tabs{
-	border-bottom: none !important;
-}
-.nav.nav-tabs.navbar-right li a:hover{
-	background-color: rgba(255,255,255,.1) !important;
-	color: #fff;
-	border-top: 5px solid #f5f5f5;
 }
 .topnav{
 	margin-right: 20% !important;
@@ -1018,6 +989,12 @@ footer{
 .image img{
 	max-height: 700px;
 }
+.glyphicon-email{
+	font-size: 40px !important;
+}
+.social-media-icon{
+	height: 40px !important;
+}
 }
 @media (min-width:1281px) {
  /* hi-res laptops and desktops */
@@ -1025,7 +1002,7 @@ footer{
 	display: inline-block;
 }
 .carousel-control{
-	width: 5% !important;
+	width: 10% !important;
 	display: block;
 }
 .gallery-btn{
@@ -1072,7 +1049,7 @@ footer{
 }
 .item img{
 	width: 100% !important;
-	margin: 100px auto;
+	margin: 0px auto;
 	max-height: 800px !important;
 }
 .small-screen-img{
@@ -1090,59 +1067,19 @@ footer{
     padding: 15px 15px;
     border-radius: 15px;
 }
-.hello{
-	position: absolute;
-	font-size: 1.8em;
-	top: 150px;
-	left: 75px;
-	color: #fff;
-	text-align: center;
-    width: 500px;
-}
 .me,.about-me{
-	text-align: center;
-	height: 600px;
-	overflow: hidden;
+	height: 600px !important;
 }
-.cassie,.cassie2,.cassie3,.cassie4{
-	float: left;
-    width: 100%;
-    margin: -100px auto;
-}
-.cassie4{
-	margin-top: -650px;
-}
-.bio,.bio2,.bio3{
-	float: right;
-	margin: -500px 50px 0 0;
-	width: 500px;
-	text-align: center;
+.hello,.bio,.bio2,.bio3{
 	font-size: 1.8em;
-	color: #fff;
+}
+.bio,.bio3{
+	top: -900px;
+	left: 250px;
 }
 .bio2{
-	margin-top: -700px;
-	float: left;
-	margin-left: 50px;
-}
-.nav{
-	margin-top: 50px!important;
-}
-.nav-tabs li a{
-	color: #d3d3d3 !important;
-	font-size: 1.2em;
-}
-.nav-tabs li a:hover{
-	color: #fff !important;
-	font-weight: bold !important;
-}
-.nav-tabs{
-	border-bottom: none !important;
-}
-.nav.nav-tabs.navbar-right li a:hover{
-	background-color: rgba(255,255,255,.1) !important;
-	color: #fff;
-	border-top: 5px solid #f5f5f5;
+	top: -900px;
+	right: 250px;
 }
 .topnav{
 	margin-right: 20% !important;
@@ -1210,5 +1147,21 @@ footer{
 }
 .image img{
 	max-height: 700px;
+}
+.glyphicon-email{
+	top: 20px !important;
+	font-size: 45px !important;
+	margin-right: 15px !important;
+}
+.social-media{
+	top: -5px;
+}
+.social-media-icon{
+	height: 45px !important;
+	margin-right: 15px;
+}
+.me,.about-me{
+	height: 770px !important;
+}
 }
 }

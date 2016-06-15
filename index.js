@@ -176,4 +176,35 @@ app.get('/maternity-images/:idx', function(req,res){
 	};
 });
 
+var graduationImages = [
+{title: 'Graduation1', src:'https://c5.staticflickr.com/8/7347/27403088700_ec406e4c9b_c.jpg'},
+{title: 'Graduation2', src:'https://c5.staticflickr.com/8/7254/27403088860_d103a21d62_c.jpg'},
+{title: 'Graduation3', src:'https://c3.staticflickr.com/8/7292/27403088650_9ebc6aa9e0_c.jpg'},
+{title: 'Graduation4', src:'https://c1.staticflickr.com/8/7210/27403088320_35227d7be9_c.jpg'},
+{title: 'Graduation5', src:'https://c8.staticflickr.com/8/7385/27071081343_a72ed662fa_c.jpg'},
+{title: 'Graduation6', src:'https://c7.staticflickr.com/8/7309/27403088870_8dba4a5b60_c.jpg'},
+{title: 'Graduation9', src:'https://c1.staticflickr.com/8/7291/27403087840_55e1266218_c.jpg'},
+{title: 'Graduation10', src:'https://c5.staticflickr.com/8/7392/27403088100_d4c12050da_c.jpg'},
+{title: 'Graduation11', src:'https://c2.staticflickr.com/8/7765/27071081433_a1cf8eb34c_c.jpg'},
+{title: 'Graduation7', src:'https://c7.staticflickr.com/8/7283/27403088950_6beba4acf7_c.jpg'},
+{title: 'Graduation8', src:'https://c4.staticflickr.com/8/7438/27071081483_35706dec86_c.jpg'}
+];
+
+app.get('/graduation',function(req,res){
+	res.render('graduation.ejs');
+})
+
+app.get('/graduation-gallery',function(req,res){
+	res.render('graduationGallery',{graduationImages:graduationImages});
+})
+
+app.get('/graduation-images/:idx', function(req,res){
+	var graduationIdx = parseInt(req.params.idx);
+	if(graduationIdx >= 0 && graduationIdx < graduationImages.length){
+		res.render('graduationShow.ejs',{
+			graduationImages:graduationImages[graduationIdx]
+		});
+	}
+})
+
 app.listen(3000);
