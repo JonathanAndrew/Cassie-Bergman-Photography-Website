@@ -42,10 +42,19 @@ var weddingImages = [
 	{title: 'Wedding19', src:'https://c8.staticflickr.com/8/7343/27374182111_dbb67d9bfe_b.jpg'},
 	{title: 'Wedding20', src:'https://c2.staticflickr.com/8/7314/26838421993_d0a71a2532_b.jpg'},
 	{title: 'Wedding21', src:'https://c6.staticflickr.com/8/7336/27374183581_03bc413d07_b.jpg'},
-	{title: 'Wedding22', src:'https://c8.staticflickr.com/8/7043/27374184631_c71fecfa56_b.jpg'},
-	{title: 'Wedding23', src:'https://c2.staticflickr.com/8/7673/26838424793_76d5c88e89_b.jpg'},
-	{title: 'Wedding24', src:'https://c2.staticflickr.com/8/7026/26838426073_8c17895e5f_b.jpg'},
-	{title: 'Wedding25', src:'https://c4.staticflickr.com/8/7296/26838430483_906984a394_b.jpg'}
+	{title: 'Wedding22', src:'https://c7.staticflickr.com/8/7300/27610777742_fb96891871_c.jpg'},
+	{title: 'Wedding23', src:'https://c3.staticflickr.com/8/7056/27677488986_0a0f28dd89_c.jpg'},
+	{title: 'Wedding24', src:'https://c7.staticflickr.com/8/7323/27677489366_803aacac00_c.jpg'},
+	{title: 'Wedding24', src:'https://c3.staticflickr.com/8/7246/27610780482_3dca2d4bae_c.jpg'},
+	{title: 'Wedding25', src:'https://c1.staticflickr.com/8/7566/27677491296_9a14134c25_c.jpg'},
+	{title: 'Wedding26', src:'https://c1.staticflickr.com/8/7050/27433957800_c7849ce592_c.jpg'},
+	{title: 'Wedding27', src:'https://c8.staticflickr.com/8/7043/27374184631_c71fecfa56_b.jpg'},
+	{title: 'Wedding28', src:'https://c2.staticflickr.com/8/7673/26838424793_76d5c88e89_b.jpg'},
+	{title: 'Wedding29', src:'https://c2.staticflickr.com/8/7026/26838426073_8c17895e5f_b.jpg'},
+	{title: 'Wedding30', src:'https://c4.staticflickr.com/8/7296/26838430483_906984a394_b.jpg'},
+	{title: 'Wedding31', src:'https://c3.staticflickr.com/8/7360/27677579546_df3a1a62df_c.jpg'},
+	{title: 'Wedding32', src:'https://c6.staticflickr.com/8/7350/27711512245_f6fc428f38_c.jpg'}
+
 ];
 
 app.get('/wedding-gallery', function(req,res){
@@ -77,8 +86,11 @@ var engagementImages = [
 	{title: 'engagement-photo2', src: 'https://c3.staticflickr.com/8/7741/27111225050_da7de3574a_b.jpg'},
 	{title: 'engagement-photo3', src: 'https://c2.staticflickr.com/8/7316/26780178713_6f9b87887e_b.jpg'},
 	{title: 'engagement-photo4', src: 'https://c2.staticflickr.com/8/7616/26780180673_584b6ea3ef_b.jpg'},
-	{title: 'engagement-photo5', src: 'https://c3.staticflickr.com/8/7207/27111226010_d42c7f7f39_b.jpg'},
-	{title: 'engagement-photo5', src: 'https://c6.staticflickr.com/8/7294/26780180293_fcf4bb17be_b.jpg'}
+	{title: 'engagement-photo5', src: 'https://c7.staticflickr.com/8/7616/27099120614_68b2e506f3_c.jpg'},
+	{title: 'engagement-photo6', src: 'https://c3.staticflickr.com/8/7073/27677491106_ce464e6f74_c.jpg'},
+	{title: 'engagement-photo7', src: 'https://c3.staticflickr.com/8/7207/27111226010_d42c7f7f39_b.jpg'},
+	{title: 'engagement-photo8', src: 'https://c6.staticflickr.com/8/7294/26780180293_fcf4bb17be_b.jpg'},
+	{title: 'engagement-photo9', src: 'https://c1.staticflickr.com/8/7419/27677579776_a86f183b73_c.jpg'}
 ];
 
 app.get('/engagement-images/:idx', function(req,res){
@@ -99,15 +111,24 @@ var kidsImages = [
 {title: 'kids4', src: 'https://c2.staticflickr.com/8/7789/27387391385_38f0f8a907_b.jpg'},
 {title: 'kids5', src: 'https://c4.staticflickr.com/8/7064/27387390315_d15e2b3c09_b.jpg'},
 {title: 'kids6', src: 'https://c5.staticflickr.com/8/7384/27353929676_d5f92ebe6f_b.jpg'},
-{title: 'kids7', src: 'https://c5.staticflickr.com/8/7305/27353925836_9384387c5f_b.jpg'},
-{title: 'kids8', src: 'https://c5.staticflickr.com/8/7422/26994993244_1077da87fe.jpg'},
-{title: 'kids8', src: 'https://c7.staticflickr.com/8/7321/27327940350_65591fe387.jpg'},
-{title: 'kids9', src: 'https://c2.staticflickr.com/8/7163/27387390785_a5903c1a85_b.jpg'},
-{title: 'kids10', src: 'https://c4.staticflickr.com/8/7308/27387389875_92b5c06ab4_b.jpg'},
-{title: 'kids11', src: 'https://c5.staticflickr.com/8/7546/27353926516_debd365a01_b.jpg'},
-{title: 'kids12', src: 'https://c5.staticflickr.com/8/7738/27353928916_f3e97ab893_b.jpg'},
-{title: 'kids13', src: 'https://c3.staticflickr.com/8/7305/27353927306_57d023b545_b.jpg'},
-{title: 'kids14', src: 'https://c3.staticflickr.com/8/7218/27353925546_03bb9c0911_b.jpg'}
+{title: 'kids7', src: 'https://c5.staticflickr.com/8/7422/26994993244_1077da87fe.jpg'},
+{title: 'kids8', src: 'https://c1.staticflickr.com/8/7300/27677490336_4ae0b5b846_c.jpg'},
+{title: 'kids9', src: 'https://c7.staticflickr.com/8/7351/27677490926_c7576e276d_c.jpg'},
+{title: 'kids10', src: 'https://c5.staticflickr.com/8/7305/27353925836_9384387c5f_b.jpg'},
+{title: 'kids11', src: 'https://c7.staticflickr.com/8/7321/27327940350_65591fe387.jpg'},
+{title: 'kids12', src: 'https://c1.staticflickr.com/8/7566/27677491296_9a14134c25_c.jpg'},
+{title: 'kids13', src: 'https://c4.staticflickr.com/8/7319/27637773451_1efe9a0635_c.jpg'},
+{title: 'kids14', src: 'https://c4.staticflickr.com/8/7274/27712493035_fe8f746815_c.jpg'},
+{title: 'kids15', src: 'https://c2.staticflickr.com/8/7420/27102048753_52888a6c75_c.jpg'},
+{title: 'kids16', src: 'https://c2.staticflickr.com/8/7163/27387390785_a5903c1a85_b.jpg'},
+{title: 'kids17', src: 'https://c4.staticflickr.com/8/7308/27387389875_92b5c06ab4_b.jpg'},
+{title: 'kids18', src: 'https://c5.staticflickr.com/8/7546/27353926516_debd365a01_b.jpg'},
+{title: 'kids19', src: 'https://c5.staticflickr.com/8/7738/27353928916_f3e97ab893_b.jpg'},
+{title: 'kids20', src: 'https://c3.staticflickr.com/8/7305/27353927306_57d023b545_b.jpg'},
+{title: 'kids22', src: 'https://c3.staticflickr.com/8/7218/27353925546_03bb9c0911_b.jpg'},
+{title: 'kids23', src: 'https://c8.staticflickr.com/8/7379/27711513135_93e2cf4369_c.jpg'},
+{title: 'kids24', src: 'https://c7.staticflickr.com/8/7345/27100244494_0b3f127e96_c.jpg'},
+{title: 'kids25', src: 'https://c2.staticflickr.com/8/7591/27637773361_38f0f1dfb4_c.jpg'}
 ];
 
 app.get('/kids', function(req,res){
@@ -131,7 +152,9 @@ app.get('/kids-images/:idx', function(req,res){
 
 var familyImages = [
 	{title: 'Family1',src:'https://c7.staticflickr.com/8/7283/27353917966_b5e96ddcae_b.jpg'},
-	{title: 'Family2',src:'https://c3.staticflickr.com/8/7617/27289366882_32e4277320_b.jpg'}
+	{title: 'Family2',src:'https://c3.staticflickr.com/8/7617/27289366882_32e4277320_b.jpg'},
+	{title: 'Family2',src:'https://c1.staticflickr.com/8/7120/27612085072_ed83e02ae1_c.jpg'}
+
 ]
 
 app.get('/family', function(req,res){
@@ -154,7 +177,10 @@ app.get('/family-images/:idx',function(req,res){
 });
 
 var maternityImages = [
-	{title: 'Maternity1',src:'https://c3.staticflickr.com/8/7212/27353933746_f964fd7ec6_b.jpg'}
+	{title: 'Maternity1',src:'https://c3.staticflickr.com/8/7212/27353933746_f964fd7ec6_b.jpg'},
+	{title: 'Maternity2',src:'https://c2.staticflickr.com/8/7583/27712598945_108d3c399b_c.jpg'},
+	{title: 'Maternity3',src:'https://c2.staticflickr.com/8/7419/27712598905_dcfe0491e4_c.jpg'},
+	{title: 'Maternity4',src:'https://c7.staticflickr.com/8/7695/27678671966_4757dedc9c_c.jpg'}
 ]
 
 app.get('/maternity',function(req,res){
