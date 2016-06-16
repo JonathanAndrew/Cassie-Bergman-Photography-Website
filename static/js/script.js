@@ -6,6 +6,12 @@ $(document).ready(function(){
    	$("#carousel-id").swipeleft(function() {  
       	$(this).carousel('next');  
 	});  
+	$(".left").on('click',function(){
+		$(this).carousel('prev');
+	});
+	$(".right").on('click',function(){
+		$(this).carousel('next');
+	})
 	$('#carousel-id').carousel({
   		interval: 3000
 	});
