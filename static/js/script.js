@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	
-	$("#myCarousel").swiperight(function() {  
+
+	$("#carousel-id").swiperight(function() {  
 		$(this).carousel('prev');  
 	});  
-   	$("#myCarousel").swipeleft(function() {  
+   	$("#carousel-id").swipeleft(function() {  
       	$(this).carousel('next');  
 	});  
 	$('#carousel-id').carousel({
