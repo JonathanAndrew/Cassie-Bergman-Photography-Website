@@ -70,17 +70,35 @@ footer{
 .carousel-control{
 	display: none;
 }
+/*.btn-primary{
+	border: 2px 
+}*/
+.gallery-btn a{
+	background-color: rgba(0,0,0,.1)!important;
+   	border: 2px solid #fff !important;
+    border-radius: 0px !important;
+    padding: 15px 30px;
+}
+.gallery-btn a:hover{
+	color: #000;
+	background-color: rgb(255,255,255)!important;
+	font-weight: bold;
+	border: 2px solid #000 !important;
+}
 .gallery-btn{
-	position: absolute;
-	bottom: 120px;
-	left: 15%;
-	right: 15%;
+	
+	/*left: 44%;
+	right: 44%;*/
 	padding-bottom: 0 !important;
 }
 .gallery-btn-container{
+	position: fixed;
+	top: 50%;
+	width: 100%;
 	text-align: center;
 }
 .home-gallery-btn-container{
+	position: absolute;
 	bottom: 100px;
 	text-align: center;
 }
@@ -269,8 +287,19 @@ footer{
 }
 .back-btn{
 	position: fixed !important;
-	top: 55px !important;
-	left: 5px !important;
+	top: 57px !important;
+	left: 10px !important;
+	color: #000 !important;
+	background-color: rgba(0,0,0,.1)!important;
+   	border: 2px solid #000 !important;
+    border-radius: 0px !important;
+    padding: 15px 30px;
+}
+.back-btn:hover{
+	color: #000;
+	background-color: rgb(255,255,255)!important;
+	font-weight: bold;
+	border: 2px solid #000 !important;
 }
 .gallery{
 	text-align: center;
@@ -545,6 +574,7 @@ footer{
 }
 .back-btn{
 	top: 91px !important;
+    left: 12px !important;
 }
 }
 @media screen and (min-width:641px) {
@@ -638,6 +668,7 @@ footer{
 }
 .back-btn{
 	top: 91px !important;
+    left: 15px !important;
 }
 /*.gallery{
 	text-align: center;
@@ -720,7 +751,7 @@ footer{
 	width: auto !important;
 }
 .item img{
-	width: 98% !important;
+	width: 100% !important;
     height: auto !important;
     overflow: hidden;
     margin: 85px auto;
@@ -798,8 +829,8 @@ footer{
 	margin: 0 auto;
 }
 .item img{
-	width: auto !important;
-    height: 600px !important;
+	width: 100% !important;
+    height: auto !important;
     margin: 85px auto;
 }
 .front-page-img{
@@ -840,6 +871,7 @@ footer{
 }
 .back-btn{
 	top: 91px !important;
+    left: 20px !important;
 }
 /*.gallery{
 	width: 100%;
@@ -957,8 +989,8 @@ footer{
 	margin: 0 auto;
 }
 .item img{
-	width: auto !important;
-    height: 600px !important;
+	width: 100% !important;
+    height: auto !important;
     margin: 85px auto;
 }
 .front-page-img{
@@ -1051,10 +1083,7 @@ footer{
 	margin-top: 100px;
 	text-align: center;
 }
-/*.image img{
-	width: auto;
-	height: 570px;
-}*/
+
 .glyphicon-email{
 	font-size: 40px !important;
 }
@@ -1122,8 +1151,8 @@ footer{
 	margin: 80px auto;
 }
 .item img{
-	width: auto !important;
-    height: 600px !important;
+	width: 100% !important;
+    height: auto !important;
     margin: 0px auto;
 }
 .front-page-img{
@@ -1212,10 +1241,7 @@ footer{
 	margin-top: 100px;
 	text-align: center;
 }
-/*.image img{
-	width: auto;
-	height: 570px;
-}*/
+
 .glyphicon-email{
 	top: 20px !important;
 	font-size: 45px !important;
