@@ -497,9 +497,8 @@ footer{
 }
 
 .navbar-brand{
-	font-size: .45em !important;
-    width: 260px;
-    margin-left: 10px;
+	font-size: .38em !important;
+    width: 250px;
 }
 .carousel-control{
 	display: none;
@@ -554,8 +553,8 @@ footer{
 }
 @media screen and (min-width:351px){ 
 .navbar-brand{
-	font-size: .45em !important;
-	width: 322px;
+	font-size: .42em !important;
+	width: 280px;
 }
 .featured{
 	display: none;
@@ -566,7 +565,7 @@ footer{
 	display: none;
 }
 .navbar-brand{
-	font-size: .55em !important;
+	font-size: .48em !important;
 	width: 350px;
 	margin-left: 5px;
 }
