@@ -16,7 +16,7 @@ function handleBook(req,res){
 			pass : process.env.PASSWORD
 		}
 	});
-var message = "Name: " + req.body.first + " " + req.body.last + "\n" + "Phone-Number: " + req.body.phone + "\n" + "Email: " + req.body.email + "\n" + "Date: " + req.body.date + "\n" + "Number of Attendees: " + req.body.eventDescription + "\n" + "Description: " + req.body.message;
+var message = "Name: " + req.body.first + " " + req.body.last + "\n" + "Phone-Number: " + req.body.phone + "\n" + "Email: " + req.body.email + "\n" + "Date: " + req.body.date + "\n" + "Description: " + req.body.eventDescription + "\n" + "Description: " + req.body.message;
 // var email = req.body.email;
 var input = req.body.email;
 
