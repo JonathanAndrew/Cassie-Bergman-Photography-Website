@@ -18,6 +18,7 @@ footer{
 	position: absolute;
 	left: 15px;
 	bottom: 0;
+	color: #fff !important;
 }
 .navbar-collapse{
 	height: 50px !important;
@@ -543,7 +544,7 @@ footer{
 }
 @media screen and (min-width:351px){ 
 .navbar-brand{
-	font-size: .5em !important;
+	font-size: .45em !important;
 	width: 322px;
 }
 .featured{
