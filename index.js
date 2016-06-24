@@ -2,11 +2,19 @@ var express = require('express');
 var app = express();
 var ejsLayouts = require('express-ejs-layouts');
 var bodyParser = require('body-parser');
+var request = require("request");
+var env = require('env2')('config.env');  
 
 app.use(ejsLayouts);
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + "/static"));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+console.log(process.env.USER_EMAIL);
+console.log(process.env.MY_PASSWORD);
+app.get('/book', function(req,res){
+	res.send(process.env.MY_PASSWORD);
+})
 
 app.get('/',function(req,res){
 	res.render('index.ejs');
@@ -206,7 +214,7 @@ var graduationImages = [
 {title: 'Graduation1', src:'https://c5.staticflickr.com/8/7347/27403088700_ec406e4c9b_c.jpg'},
 {title: 'Graduation2', src:'https://c5.staticflickr.com/8/7254/27403088860_d103a21d62_c.jpg'},
 {title: 'Graduation3', src:'https://c3.staticflickr.com/8/7292/27403088650_9ebc6aa9e0_c.jpg'},
-{title: 'Graduation4', src:'https://c1.staticflickr.com/8/7210/27403088320_35227d7be9_c.jpg'},
+{title: 'Graduation4', src:'../images/graduation.jpg'},
 {title: 'Graduation5', src:'https://c8.staticflickr.com/8/7385/27071081343_a72ed662fa_c.jpg'},
 {title: 'Graduation6', src:'https://c7.staticflickr.com/8/7309/27403088870_8dba4a5b60_c.jpg'},
 {title: 'Graduation7', src:'https://c7.staticflickr.com/8/7283/27403088950_6beba4acf7_c.jpg'},
@@ -236,5 +244,11 @@ app.get('/graduation-images/:idx', function(req,res){
 app.get('/contact', function(req,res){
 	res.render('contact.ejs');
 })
+
+app.get('/testimonial', function(res,res){
+	res.render('testimonial.ejs');
+})
+
+app.use("/book", require("./controllers/nodemailer.js"));
 
 app.listen(process.env.PORT || 3000);

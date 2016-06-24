@@ -14,6 +14,17 @@ footer{
     bottom: 0;
     height: 65px;
 }
+#phone-number{
+	position: absolute;
+	left: 15px;
+	bottom: 0;
+}
+.navbar-collapse{
+	height: 50px !important;
+}
+.navbar-default{
+	height: 50px;
+}
 .hide{
 	display: none;
 }
@@ -25,6 +36,79 @@ footer{
 	color: rgb(0,255,255);
 	text-decoration: underline;
 	font-weight: bold;
+}
+#handleBook{
+	width: 99%;
+	text-align: center;
+}
+.input{
+	margin: 15px 15px 0 15px;
+    width: 88%;
+    text-align: center;
+    white-space: normal;
+}
+.thank{
+	text-align: center;
+}
+.thank-you{
+	padding: 5px 5px;
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+}
+#submit{
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.testimonial-img{
+	width: 100%;
+	margin: 50px 0 50px 0;
+}
+.testimonial-page{
+	text-align: center;
+	width: 100%;
+}
+.title{
+	text-align: center;
+}
+.testimonial-title{
+	position: absolute;
+	left: 13%;
+	right: 13%;
+	z-index: 99;
+	top: 25%;
+	width: 62%;
+	text-align: center;
+	margin: 0 auto;
+	letter-spacing: 10px;
+	border: 2px solid #fff;
+}
+.personal-testimonial{
+	padding-top: 50px !important;
+	font-size: 1.5em;
+	text-align: left;
+}
+.last{
+	margin-bottom: 100px;
+}
+.testimonial-title h1{
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	margin: 0;
+	padding: 10px 5px;
+	font-size: 1.2em;
+}
+.testimonial-title h1:hover{
+	background-color: rgba(255,255,255,.5);
+	color: #000;
+	font-weight: bold;
+}
+.testimonial-title a:hover{
+	text-decoration: none !important;
+}
+.center{
+	text-align: center;
 }
 .contact-page{
 	position: absolute;
@@ -61,11 +145,18 @@ footer{
 	padding: 5px !important;
 	height: 100px !important;
 }
+#navbar{
+	height: 50px !important;
+}
 .navbar{
 	font-family: 'Raleway', sans-serif;
 	width: 100%;
 	position: fixed !important;
 	top: 0;
+	min-height: 35px !important;
+}
+.navbar-default{
+	min-height: 35px !important;
 }
 .carousel-control{
 	display: none;
@@ -159,25 +250,19 @@ footer{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	position: absolute;
-	left: 1%;
-	font-size: .4em !important;
+	height: 35px !important;
+    top: 15px;
+    left: 10px;
+	font-size: .45em;
 	text-shadow: 1px 1px rgb(128,128,128);
     letter-spacing: 1px !important;
     color: #fff !important;
     padding: 0px !important;
-    width: 290px;
-    float: left;
-    height: 50px;
+    width: 300px;
     line-height: 20px;
 }
 .carousel {
     height: auto !important;
-}
-.as-featured{
-	position: absolute;
-	width: 100%;
-	bottom: 20px;
-	text-align: center;
 }
 .featured,.featured-small-screen{
 	font-size: 1.6em;
@@ -237,7 +322,7 @@ footer{
 	width: 98%;
 	height: auto;
 	overflow: hidden;
-	margin: 55px auto;
+	margin: 50px auto;
 }
 .box{
 	width: 98%;
@@ -360,13 +445,15 @@ footer{
 	text-align: center;
 	margin-top: 90px;
 }
-/*.image{
+.image{
 	margin-top: 100px;
 	text-align: center;
-}*/
+}
 .image img{
-	width: 98%;
-	margin: -40px auto;
+	width: 95%;
+	float: none;
+	margin: 0 auto;
+	max-width: auto;
 }
 .social-media{
 	list-style-type: none;
@@ -451,13 +538,13 @@ footer{
 }
 .image{
 	margin-top: 100px;
-	text-align: center;
+	text-align: center !important;
 }
 }
 @media screen and (min-width:351px){ 
 .navbar-brand{
-	font-size: .53em !important;
-	margin-left: 2%;
+	font-size: .5em !important;
+	width: 322px;
 }
 .featured{
 	display: none;
@@ -468,9 +555,9 @@ footer{
 	display: none;
 }
 .navbar-brand{
-	font-size: .6em !important;
+	font-size: .55em !important;
 	width: 350px;
-	margin-left: 15px;
+	margin-left: 5px;
 }
 .family{
 	height: auto !important;
@@ -485,6 +572,9 @@ footer{
 	padding-bottom: 0 !important;
 	bottom: 7% !important;
 }*/
+.testimonial-title{
+	width: 50%;
+}
 .phone{
 	margin-top: 0px;
 }
@@ -492,12 +582,12 @@ footer{
 	list-style-type: none;
 }
 .navbar-brand{
-	font-size: .75em !important;
-    margin-left: 25px !important;
-    width: 400px !important;
+	font-size: .65em !important;
+    margin-left: 15px !important;
+    width: 415px !important;
 }
 .navbar-inverse{
-	height: 85px;
+	height: 50px;
 }
 .featured {
 	font-size: 1.5em;
@@ -559,7 +649,7 @@ footer{
 }
 .image{
 	margin-top: 100px;
-	text-align: center;
+	text-align: center !important;
 }
 .social-media{
 	top:0px;
@@ -583,6 +673,12 @@ footer{
 	display: block;
 	width: 10% !important;
 }
+.testimonial-title{
+	width: 50%;
+}
+.testimonial-title h1{
+	font-size: 1.5em;
+}
 /*.gallery-btn{
 	padding-bottom: 0 !important;
 	bottom: 7% !important;
@@ -601,12 +697,12 @@ footer{
 }
 
 .navbar-brand{
-	font-size: 1em !important;
-    margin-left: 25px !important;
-    width: 525px !important;
+	font-size: .65em !important;
+    margin-left: 15px !important;
+    width: 420px !important;
 }
 .navbar-inverse{
-	height: 85px;
+	height: 50px;
 }
 .featured {
     display: block;
@@ -725,7 +821,7 @@ footer{
 }
 .image{
 	margin-top: 100px;
-	text-align: center;
+	text-align: center !important;
 }
 .glyphicon-email{
 	font-size: 40px !important;
@@ -735,54 +831,70 @@ footer{
 	height: 40px !important;
 }
 }
-@media screen and (min-width:700px){
+@media screen and (min-width:768px){
+.testimonial-title{
+	width: 43%;
+}
+.testimonial-title h1{
+	font-size: 1.7em;
+}
 .me,.about-me{
 	text-align: center;
 	height: 460px !important;
 }
 .navbar-right{
-	margin-right: 20px !important;
+	margin-right: 62px !important;
+}
+.navbar li a{
+	font-size: 1.2em;
 }
 .nav{
-	margin-top: 50px;
+	margin-top: 15px;
 }
 .family{
 	height: 500px !important;
 	width: auto !important;
 }
 .item img{
-	width: 100% !important;
+	width: 90% !important;
     height: auto !important;
     overflow: hidden;
-    margin: 85px auto;
+    margin: 50px auto;
 }
-/*.image img{
-	width: auto;
-	max-width: 
-	height: 550px;
-}*/
+.image img{
+	width: 60%;
+	float: none;
+	margin: 0 auto;
+	max-width: auto;
+}
 }
 @media screen and (min-width:800px){
+.testimonial-title h1{
+	font-size: 1.9em;
+}
 .me,.about-me{
 	text-align: center;
 	height: 500px !important;
 }
 .navbar-right{
-	margin-right: 25px !important;
+	margin-right: 62px !important;
 }
 .family{
 	height: 550px !important;
 	width: auto !important;
 }
-/*.image img{
-	width: auto;
-	max-width: 600px;
-	height: auto;
-	min-height: auto;
-}*/
+.image img{
+	width: 60%;
+	float: none;
+	margin: 0 auto;
+	max-width: auto;
+}
 }
 @media screen and (min-width:961px) {
  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+.testimonial-title h1{
+	font-size: 2em;
+}
 .carousel-control{
 	display: block;
 	width: 10% !important;
@@ -805,12 +917,12 @@ footer{
 	margin-bottom: 0 !important;
 }
 .navbar-right{
-	margin-right: 50px !important;
+	margin-right: 62px !important;
 }
 .navbar-brand{
-	font-size: 1em !important;
-    margin-left: 50px !important;
-    width: 630px !important;
+	font-size: .8em !important;
+    margin-left: 55px !important;
+    width: 500px !important;
 }
 .navbar-tabs{
 	margin-right: 30px;
@@ -829,9 +941,9 @@ footer{
 	margin: 0 auto;
 }
 .item img{
-	width: 100% !important;
+	width: 90% !important;
     height: auto !important;
-    margin: 85px auto;
+    margin: 50px auto;
 }
 .front-page-img{
 	width: 100%;
@@ -864,7 +976,7 @@ footer{
 }
 
 .nav{
-	margin-top: 50px!important;
+	margin-top: 15px!important;
 }
 .topnav{
 	margin-right: 20% !important;
@@ -922,15 +1034,17 @@ footer{
 	text-align: center;
 	margin-top: 50px;
 }
-.image{
+/*.image{
 	margin-top: 100px;
 	text-align: center;
-}
-/*.image img{
-	width: auto;
-	max-width: 800px;
-	height: 570px;
 }*/
+.image img{
+	width: auto;
+	height: 625px;
+	float: none;
+	margin: 0 auto;
+	max-width: auto;
+}
 .glyphicon-email{
 	font-size: 40px !important;
 }
@@ -944,7 +1058,12 @@ footer{
 }
 @media screen and (min-width:1025px){
  /* big landscape tablets, laptops, and desktops */ 
-
+.testimonial-title{
+	width: 40%;
+}
+.testimonial-title h1{
+	font-size: 2.2em;
+}
 .carousel-control{
 	display: block;
 	width: 10% !important;
@@ -967,13 +1086,8 @@ footer{
 	margin-bottom: 0 !important;
 }
 
-.navbar-brand{
-	font-size: 1.2em !important;
-    margin-left: 50px !important;
-    width: 630px !important;
-}
 .navbar-right{
-	margin-right: 100px !important;
+	margin-right: 62px !important;
 }
 .featured {
     display: block;
@@ -989,9 +1103,9 @@ footer{
 	margin: 0 auto;
 }
 .item img{
-	width: 100% !important;
+	width: 90% !important;
     height: auto !important;
-    margin: 85px auto;
+    margin: 50px auto;
 }
 .front-page-img{
 	width: 100%;
@@ -1021,7 +1135,7 @@ footer{
 }
 
 .nav{
-	margin-top: 50px!important;
+	margin-top: 15px!important;
 }
 .topnav{
 	margin-right: 20% !important;
@@ -1079,10 +1193,10 @@ footer{
 	text-align: center;
 	margin-top: 50px;
 }
-.image{
+/*.image{
 	margin-top: 100px;
 	text-align: center;
-}
+}*/
 
 .glyphicon-email{
 	font-size: 40px !important;
@@ -1096,6 +1210,12 @@ footer{
 }
 }
 @media (min-width:1281px) {
+.testimonial-title{
+	width: 33%;
+}
+.testimonial-title h1{
+	font-size: 2.4em;
+}
  /* hi-res laptops and desktops */
 .hide{
 	display: inline-block;
@@ -1114,20 +1234,21 @@ footer{
 .title{
 	list-style-type: none;
 }
-.navbar-right{
-	margin-right: 100px !important;
+.navbar{
+	height: 50px !important;
 }
 .navbar-default{
 	border-right: none !important;
 	border-left: none !important;
 	z-index: 999;
 	margin-bottom: 0 !important;
+	height: 35px !important;
 }
 
 .navbar-brand{
-	font-size: 1.2em !important;
-    margin-left: 50px !important;
-    width: 630px !important;
+	font-size: 1em !important;
+    margin-left: 62px !important;
+    width: 620px !important;
 }
 
 .featured{
@@ -1148,12 +1269,12 @@ footer{
 	width: auto;
 	height: 800px;
 	overflow: hidden;
-	margin: 80px auto;
+	margin: 0px auto;
 }
 .item img{
-	width: 100% !important;
+	width: 90% !important;
     height: auto !important;
-    margin: 0px auto;
+    margin: 50px auto;
 }
 .front-page-img{
 	width: 100%;
@@ -1174,7 +1295,7 @@ footer{
 	font-size: 1.8em;
 }
 .bio,.bio3{
-	top: -900px;
+	top: -850px;
 	left: 250px;
 }
 .bio2{
@@ -1234,13 +1355,13 @@ footer{
     left: 12px;
 }
 .show-image{
-	text-align: center;
+	text-align: center !important;
 	margin-top: 50px;
 }
-.image{
+/*.image{
 	margin-top: 100px;
 	text-align: center;
-}
+}*/
 
 .glyphicon-email{
 	top: 20px !important;

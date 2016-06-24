@@ -6,6 +6,13 @@ $(document).ready(function(){
    	$("#carousel-id").swipeleft(function() {  
       	$(this).carousel('next');  
 	});  
+	function timer() {
+    	setTimeout(function(), 3000);
+	}
+	$('#submit').on('click',function(){
+		$(".thank-you").show();
+		});
+	});
 	// $("#carousel-id").on('click',function(){
 	// 	$(this).carousel('prev');
 	// });
