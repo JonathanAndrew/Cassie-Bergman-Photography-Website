@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var env = require('env2')('config.env');  
 
 // create reusable transporter object using the default SMTP transport
-var transporter = nodemailer.createTransport('smtps://user%40gmail.com:pass@smtp.gmail.com');
+// var transporter = nodemailer.createTransport('smtps://user%40gmail.com:pass@smtp.gmail.com');
 
 router.post('/', handleBook);
 
