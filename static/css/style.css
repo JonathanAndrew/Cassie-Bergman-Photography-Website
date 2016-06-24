@@ -263,7 +263,7 @@ footer{
 	position: absolute;
 	height: 35px !important;
     top: 15px;
-    left: 10px;
+    left: 5px;
 	font-size: .45em;
 	text-shadow: 1px 1px rgb(128,128,128);
     letter-spacing: 1px !important;
@@ -567,7 +567,6 @@ footer{
 .navbar-brand{
 	font-size: .48em !important;
 	width: 350px;
-	margin-left: 5px;
 }
 .family{
 	height: auto !important;
@@ -593,7 +592,7 @@ footer{
 }
 .navbar-brand{
 	font-size: .65em !important;
-    margin-left: 15px !important;
+    margin-left: 5px !important;
     width: 415px !important;
 }
 .navbar-inverse{
