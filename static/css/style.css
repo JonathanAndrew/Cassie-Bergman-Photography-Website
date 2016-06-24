@@ -14,7 +14,7 @@ footer{
     bottom: 0;
     height: 65px;
 }
-#myModal{
+#myModal,.dropdown-menu{
 	 cursor: pointer;
 }
 #phone-number{
