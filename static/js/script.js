@@ -1,18 +1,13 @@
 $(document).ready(function(){
-
-	$("#carousel-id").swiperight(function() {  
+	$("#carousel-id").on('swipeleft',function() {  
 		$(this).carousel('prev');  
-	});  
-   	$("#carousel-id").swipeleft(function() {  
+	});
+   	$("#carousel-id").on('swiperight',function() {  
       	$(this).carousel('next');  
 	});  
-	function timer() {
-    	setTimeout(function(), 3000);
-	}
-	$('#submit').on('click',function(){
-		$(".thank-you").show();
-		});
-	});
+	// $('#submit').on('click',function(){
+	// 	$(".thank-you").show();
+	// });
 	$('.carousel-control').carousel({
   		interval: 3000
 	});
@@ -20,4 +15,4 @@ $(document).ready(function(){
 	for(var i=0;i<portraits.length;i++){
 		$('#portraits').append('<option value"'+ portraits[i]+'">'+portraits[i] + '</option>');
 	}
-})
+});
