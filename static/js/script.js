@@ -13,12 +13,6 @@ $(document).ready(function(){
 		$(".thank-you").show();
 		});
 	});
-	// $("#carousel-id").on('click',function(){
-	// 	$(this).carousel('prev');
-	// });
-	// $(".carousel-control").on('click',function(){
-	// 	$(this).carousel('next');
-	// })
 	$('.carousel-control').carousel({
   		interval: 3000
 	});
