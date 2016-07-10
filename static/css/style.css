@@ -1286,6 +1286,11 @@ footer{
     height: auto !important;
     margin: 50px auto;
 }
+.grad img{
+	width: 1000px !important;
+	height: auto !important;
+    margin: 50px auto;
+}
 .front-page-img{
 	width: 100%;
 	display: block !important;
