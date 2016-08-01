@@ -249,6 +249,10 @@ app.get('/testimonial', function(res,res){
 	res.render('testimonial.ejs');
 })
 
+app.get('/investment', function(req,res){
+	res.render('investment.ejs');
+})
+
 app.use("/book", require("./controllers/nodemailer.js"));
 
 app.listen(process.env.PORT || 3000);
