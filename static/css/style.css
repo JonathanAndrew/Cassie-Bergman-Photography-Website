@@ -359,6 +359,7 @@ footer{
 	height: auto;
 	overflow: hidden;
 	margin: 50px auto;
+	margin-bottom: 0px;
 }
 .box{
 	width: 98%;
