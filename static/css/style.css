@@ -6,14 +6,14 @@ body{
 footer{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
-	background-color: rgba(0,0,0,.5);
+	background-color: #222;
 	z-index: 999;
     width: 100%;
     color: #fff;
     text-align: center;
-    position: fixed;f
-    bottom: 0;
-    height: 65px;
+    position: fixed;
+    height: 70px;
+    bottom: 0px;
 }
 @keyframes blink {50% { color: transparent }}
 .loader__dot { animation: 1s blink infinite }
@@ -354,13 +354,14 @@ footer{
 .glyphicon:hover,.social-media-icon:hover{
 	color: #00FFFF;
 }
-.steph{
-	max-height: 550px;
-	min-height: 450px;
+.carousel-inner>.item>.steph{
+	height: 620px !important;
+	width: auto !important;
+}
+.carousel-inner>.item>img{
+	width: auto;
 }
 .item img{
-	width: 100%;
-	height: auto;
 	overflow: hidden;
 	margin: 50px auto;
 	margin-bottom: 0px;
@@ -501,11 +502,12 @@ footer{
 .social-media{
 	list-style-type: none;
 	position: absolute;
-	top: 20px;
-	right: 35px;
+	top: 25px;
+	right: 20px;
 }
 .social-media li{
 	display: inline;
+	padding: 2px 2px;
 }
 .social-media-icon{
 	margin-left: 5px;
