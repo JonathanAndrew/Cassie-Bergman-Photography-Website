@@ -354,8 +354,12 @@ footer{
 .glyphicon:hover,.social-media-icon:hover{
 	color: #00FFFF;
 }
+.steph{
+	max-height: 550px;
+	min-height: 450px;
+}
 .item img{
-	width: 98%;
+	width: 100%;
 	height: auto;
 	overflow: hidden;
 	margin: 50px auto;
