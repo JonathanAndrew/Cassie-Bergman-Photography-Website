@@ -12,7 +12,7 @@ footer{
     color: #fff;
     text-align: center;
     position: fixed;
-    height: 70px;
+    height: 60px;
     bottom: 0px;
 }
 @keyframes blink {50% { color: transparent }}
@@ -498,7 +498,7 @@ footer{
 .galleryNav{
 	z-index: 99;
 	position: fixed;
-	top: 60px;
+	top: 57px;
 	right: 4%;
 }
 .galleryNav ul{
@@ -522,7 +522,7 @@ footer{
 .social-media{
 	list-style-type: none;
 	position: absolute;
-	top: 25px;
+	top: 18px;
 	right: 20px;
 }
 .social-media li{
