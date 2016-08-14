@@ -359,7 +359,8 @@ footer{
 	width: auto !important;
 }
 .carousel-inner>.item>img{
-	width: auto;
+	height: auto !important;
+	max-width: 100% !important;
 }
 .item img{
 	overflow: hidden;
@@ -397,7 +398,9 @@ footer{
 	margin: 50px auto !important;
 	margin-bottom: 0 !important;
 }
-
+.aboutLastPara{
+	margin-bottom: 70px;
+}
 .bio,.bio2,.bio3{
 	font-family: 'Raleway', sans-serif;
 /*	font-weight: 100;*/
@@ -487,7 +490,20 @@ footer{
 }
 .show-image{
 	text-align: center;
-	margin-top: 90px;
+	/*margin-top: 90px;*/
+}
+.galleryNav{
+	z-index: 99;
+	position: relative;
+	top: 70px;
+}
+.galleryNav ul{
+	padding-left: 0;
+	list-style-type: none;
+}
+.galleryNav li{
+	display: inline-block;
+
 }
 .image{
 	margin-top: 100px;

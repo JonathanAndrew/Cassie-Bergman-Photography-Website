@@ -33,33 +33,19 @@ counter = 0;
 console.log(engagementImages[counter].src);
 
 $('#next').on('click', function(){
-	
 	counter = (counter + 1) % engagementImages.length;
 	next = engagementImages[counter].src;
-	console.log(next);
-	$('#loading').show();
-	$('#showImage').on('load',function(){
-			$('#showImage').attr('src', next);
-			$('#loading').hide();
-	});
+	$('#showImage').attr('src', next);
 });
 
 $('#previous').on('click', function(){
 	if(counter == 0){
-		$('#loading').show();
 		counter = engagementImages.length - 1;
 		previous = engagementImages[counter].src;
-		console.log(previous);
-		$('#showImage').on('load',function(){
-			$('#showImage').attr('src', previous);
-			$('#loading').hide();
-		});
+		$('#showImage').attr('src', previous);
 	} else {
-		$('#loading').css('display','inline-block');
-		setTimeout(function() { $("#loading").css('display','none'); }, 500);
 		counter = (counter - 1) % engagementImages.length;
 		previous = engagementImages[counter].src;
-		console.log(previous);
 		$('#showImage').attr('src', previous);
 	}
 });
