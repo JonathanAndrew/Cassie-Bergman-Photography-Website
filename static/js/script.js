@@ -47,11 +47,13 @@ $('#previous').on('click', function(){
 		previous = engagementImages[counter].src;
 		$('#showImage').attr('src', previous);
 		$('.image>img').css('margin-top',engagementImages[counter].top);
+
 	} else {
 		counter = (counter - 1) % engagementImages.length;
 		previous = engagementImages[counter].src;
 		$('#showImage').attr('src', previous);
 		$('.image>img').css('margin-top',engagementImages[counter].top);
+
 	}
 });
 

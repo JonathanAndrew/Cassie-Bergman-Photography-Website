@@ -712,7 +712,7 @@ footer{
 	margin-top: 50px;
 }
 .image{
-	margin-top: 100px;
+	margin-top: 0px;
 	text-align: center !important;
 }
 .social-media{
@@ -827,8 +827,8 @@ footer{
 	margin-right: 20% !important;
 }
 .back-btn{
-	top: 91px !important;
-    left: 15px !important;
+	top: 60px !important;
+    left: 2% !important;
 }
 /*.gallery{
 	text-align: center;
@@ -884,7 +884,7 @@ footer{
 	margin-top: 50px;
 }
 .image{
-	margin-top: 100px;
+	margin-top: 50px;
 	text-align: center !important;
 }
 .glyphicon-email{
@@ -929,6 +929,7 @@ footer{
 	width: 60%;
 	float: none;
 	margin: 0 auto;
+	margin-top: 0px !important;
 	max-width: auto;
 }
 }
@@ -951,6 +952,7 @@ footer{
 	width: 60%;
 	float: none;
 	margin: 0 auto;
+	margin-top: 0px !important;
 	max-width: auto;
 }
 }
@@ -1045,10 +1047,6 @@ footer{
 .topnav{
 	margin-right: 20% !important;
 }
-.back-btn{
-	top: 91px !important;
-    left: 20px !important;
-}
 /*.gallery{
 	width: 100%;
 }*/
@@ -1103,10 +1101,11 @@ footer{
 	text-align: center;
 }*/
 .image img{
-	width: auto;
-	height: 625px;
+	width: 70%;
+	height: auto;
 	float: none;
 	margin: 0 auto;
+	margin-top: 0px !important;
 	max-width: auto;
 }
 .glyphicon-email{
@@ -1340,6 +1339,11 @@ footer{
     height: auto !important;
     margin: 50px auto;
 }
+.image img{
+	width: 40%;
+	height: auto;
+	margin-top: 10px !important;
+}
 .grad img{
 	width: 1000px !important;
 	height: auto !important;
@@ -1446,5 +1450,11 @@ footer{
 }
 .me,.about-me{
 	height: 770px !important;
+}
+}
+
+@media (min-width:1600px) {
+.image img{
+	margin-top: 20% !important;
 }
 }
