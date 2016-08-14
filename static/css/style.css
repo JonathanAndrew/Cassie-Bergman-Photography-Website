@@ -421,11 +421,11 @@ footer{
 	position: fixed !important;
 	top: 57px !important;
 	left: 10px !important;
-	color: #000 !important;
+	/*color: #000 !important;
 	background-color: rgba(0,0,0,.1)!important;
    	border: 2px solid #000 !important;
     border-radius: 0px !important;
-    padding: 15px 30px;
+    padding: 15px 30px;*/
 }
 .back-btn:hover{
 	color: #000;
@@ -492,10 +492,14 @@ footer{
 	text-align: center;
 	/*margin-top: 90px;*/
 }
+.galleryNavContainer{
+	text-align: center;
+}
 .galleryNav{
 	z-index: 99;
-	position: relative;
-	top: 70px;
+	position: fixed;
+	top: 60px;
+	right: 4%;
 }
 .galleryNav ul{
 	padding-left: 0;
@@ -506,11 +510,11 @@ footer{
 
 }
 .image{
-	margin-top: 100px;
+	margin-top: 51px;
 	text-align: center;
 }
 .image img{
-	width: 95%;
+	width: 100%;
 	float: none;
 	margin: 0 auto;
 	max-width: auto;
@@ -870,7 +874,7 @@ footer{
 	right: 50px;
 }
 .show-back-btn{
-	position: absolute;
+	position: fixed;
     top: 120px;
     left: 12px;
 }
