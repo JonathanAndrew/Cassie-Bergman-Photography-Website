@@ -61,6 +61,9 @@ footer{
 	width: 99%;
 	text-align: center;
 }
+.testimonialMobile{
+	width: 300px;
+}
 .input{
 	margin: 15px 15px 0 15px;
     width: 88%;
