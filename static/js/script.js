@@ -32,7 +32,13 @@ $(document).ready(function(){
 counter = 0;
 console.log(engagementImages[counter].src);
 console.log(engagementImages[counter].top);
-
+$('#showImage').on('swiperight',function(){
+	counter = (counter + 1) % engagementImages.length;
+	next = engagementImages[counter].src;
+	top = engagementImages[counter].top;
+	$('#showImage').attr('src', next);
+	$('.image>img').css('margin-top',engagementImages[counter].top);
+});
 $('#next').on('click', function(){
 	counter = (counter + 1) % engagementImages.length;
 	next = engagementImages[counter].src;
@@ -40,7 +46,21 @@ $('#next').on('click', function(){
 	$('#showImage').attr('src', next);
 	$('.image>img').css('margin-top',engagementImages[counter].top);
 });
+$('#showImage').on('swipeleft',function(){
+	if(counter == 0){
+		counter = engagementImages.length - 1;
+		previous = engagementImages[counter].src;
+		$('#showImage').attr('src', previous);
+		$('.image>img').css('margin-top',engagementImages[counter].top);
 
+	} else {
+		counter = (counter - 1) % engagementImages.length;
+		previous = engagementImages[counter].src;
+		$('#showImage').attr('src', previous);
+		$('.image>img').css('margin-top',engagementImages[counter].top);
+
+	}
+});
 $('#previous').on('click', function(){
 	if(counter == 0){
 		counter = engagementImages.length - 1;
