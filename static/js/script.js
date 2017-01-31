@@ -79,16 +79,3 @@ $('#previous').on('click', function(){
 
 
 });
-//for(var i= 0; i <= engagementImages.length; i++){
-// currentImage= engagementImages.indexOf(engagementImages.src)+1;
-// 			var location =  window.location.href.slice(0,-1)+currentImage;
-// 			console.log(location);
-// 			next = engagementImages[currentImage+1].src;
-// 			console.log(next);
-// 			$('#showImage').attr('src',next);
-// 			currentImage = engagementImages.indexOf(engagementImages.src)+1;
-// 			console.log(currentImage);
-//}
-
-
-// 			i++;
